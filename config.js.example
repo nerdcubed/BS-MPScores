@@ -1,0 +1,5 @@
+settings = {
+    ip: "localhost",
+    port: 3701,
+    room: 1
+}

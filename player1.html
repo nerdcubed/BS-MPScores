@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="odometer-theme-default.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+		<meta name="theme-color" content="#000000">
+		<script src="radialprogress.js"></script>
+		<script type="text/javascript" src="reconnecting-websocket.js"></script>
+		<script src="odometer.js"></script>	
+		<link href="main.99bd7877.css" rel="stylesheet">
+		<script>var p = 0;</script>
+		<style>
+		
+		@font-face {
+			font-family: 'Moko';
+			src: url('Moko-Mono.woff') format('woff'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+		}
+		@font-face {
+			font-family: 'Beon';
+			src: url('beon.medium.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+		}
+		
+		.odometer {
+    		font-size: 100px;
+		}
+		.odometer.odometer-animating-up .odometer-ribbon-inner, .odometer.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+			-webkit-transition-duration: 200ms !important;
+			-moz-transition-duration: 200ms !important;
+			-ms-transition-duration: 200ms !important;
+			-o-transition-duration: 200ms !important;
+			transition-duration: 200ms !important
+		}
+		.odometer .odometer-inside .odometer-digit:first-child,
+		.odometer .odometer-inside .odometer-formatting-mark:nth-child(2),
+		.odometer .odometer-inside .odometer-digit:last-child {
+			display: none
+		}
+		.font_moko {
+			font-family: "Moko" !important;
+		}
+		.font_beon {
+			font-family: "Beon" !important;
+		}
+		div.div1 {
+			height: 400px;
+			margin-right: 20px;
+			width: 200px;
+		}
+		div.divRight {
+			vertical-align: middle !important;
+			width: 1000px;
+  			height: 500px;
+		}
+		div.innerScore {
+			text-align: left !important;
+			align-content: left !important;
+			margin-bottom: 1px;
+			height: 100px;
+			overflow:hidden;
+		}
+		div.innerCombo {
+			text-align: left !important;
+			align-content: left !important;
+		}
+		div.main {
+			width: 100% !important;
+			display: flex !important;
+			height: 100vh !important;
+			justify-content: center !important;
+			vertical-align: middle;
+		}
+		</style>	
+	</head>
+	<body cz-shortcut-listen="true" class="vsc-initialized"><noscript>You need to enable JavaScript to run this app.</noscript><div id="root">
+		<div class="ui main">
+			<div id='pos' style="height: 15px; width: 70px; font-size: 150%" class="font_beon">1<sup style="font-size:40%;">st</sup></div>
+			<div style="float:left;">
+				<div id="bar" class="div1" style="font-size:2.5vw; display:inline-block;"></div>
+			</div>
+			<div>
+				<p><div style="height: 15px;"></div></p>
+				<p align="left"><div id="counter" class="odometer name font_moko loose innerScore">0</div></p>
+				<p align="left"><div id="comboTag" class="meta font_beon loose innerCombo" style="font-size: 50%;">COMBO</div></p>
+				<p><div id="combo" class="meta font_beon loose innerCombo">0</div></p>
+			</div>
+		</div>
+		
+		<script src="scores.js"></script>
+		
+	</body>
+</html> 
