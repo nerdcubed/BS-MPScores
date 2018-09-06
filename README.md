@@ -12,9 +12,9 @@ Clone this repository, and then copy `config.js.example` to `config.js`. Open up
 
 **It is important that the multiplayer server is setup for tournament mode, with the room your connecting to setup as a permanent room.**
 
-`player1.html` is the left aligned score, which fetches the score of the first player in the room (A.K.A the host)
-`player2.html` is the right aligned score, which fetches the score of the second player in the room (A.K.A the guest)
-`level.html` displays the currently playing song, along with the progress
+`player1.html` is the left aligned score, which fetches the score of the first player in the room (A.K.A the host)  
+`player2.html` is the right aligned score, which fetches the score of the second player in the room (A.K.A the guest)  
+`level.html` displays the currently playing song, along with the progress  
 
 In terms of browser source settings, for the two scores I used the default 800 by 600 resolution, and for the level info I used 1920 by 1080 as the resolution, with every source set to 60 frames per second.
 
